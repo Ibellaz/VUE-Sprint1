@@ -1,0 +1,89 @@
+* {
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1200px; /* Requisit enunciat */
+    background-color: white;
+    display: flex; 
+    flex-flow: column nowrap;
+}
+
+/* HEADER */
+
+.headerContainer {
+    background-color: black;
+    display: flex; 
+    flex-flow: column nowrap;
+}
+
+.navContainer {
+    background-color: rgb(39, 57, 78);
+    display: flex;
+    margin-bottom: 0;
+}
+
+.smallDivHeader {
+    background-color: rgb(234, 88, 75);
+    flex: 1;
+}
+
+.mediumDivHeader {
+    background-color: rgb(234, 88, 75);
+    flex: 4;
+}
+
+.sectionHeader {
+    background-color: rgb(240, 118, 58);
+}
+
+.bigDivHeader {
+    background-color: rgb(255, 204, 94);
+}
+
+
+/* MAIN */
+
+.mainContainer {
+    background-color: black;
+    display: flex;
+}
+
+.sectionMainContainer {
+    background-color: rgb(68, 70, 94);
+    flex: 3;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+article {
+    background-color: rgb(22, 100, 164);
+    flex: 1 1 40%;
+}
+
+.mainFooter {
+    background-color: rgb(99, 153, 187);
+    flex: 1 1 100%;  
+}
+
+.asideContainer {
+    background-color: rgb(249, 76, 71);
+    flex: 1;  
+}
+
+.asideDiv {
+    background-color: rgb(255, 227, 128);
+}
+
+
+/* FOOTER */
+
+.footerContainer {
+    background-color: black;
+}
+
+.divFooter {
+    background-color: rgb(228, 164, 52);
+}
