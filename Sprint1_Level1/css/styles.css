@@ -87,3 +87,19 @@ article {
 .divFooter {
     background-color: rgb(228, 164, 52);
 }
+
+
+/* Ex2 */
+
+@media (max-width: 915px) {
+
+    .navContainer {
+        margin-bottom: 0;
+    }
+
+    .mainContainer {        
+        background-color: rgb(255, 247, 52);
+        flex-direction: column;
+    }
+
+}
