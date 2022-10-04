@@ -1,0 +1,263 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1200px; /* Requisit enunciat */
+    background-color: white;
+    display: flex; 
+    flex-flow: column nowrap;
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+a {
+    color: rgb(152, 152, 152);
+    text-decoration: none;
+    padding: .5rem;
+}
+
+a:hover {
+    color: rgba(235, 176, 154, 1);
+}
+
+a:active {
+    color: white;
+    background-color: rgba(235, 176, 154, 1);
+}
+
+h1 {
+    font-family: 'IM Fell Double Pica', serif;
+    font-size: 3.4rem;
+    font-weight: 400;
+    color: rgba(250, 140, 70, 0.7);
+}
+
+
+/* HEADER */
+
+.headerContainer {
+    /* background-color: black; */
+    background: url(../img/header.jpg);
+    background-size: 160%;
+    background-position: 50% 55%;
+    margin-bottom: 1rem;
+    display: flex; 
+    flex-flow: column nowrap;
+    height: 30rem;
+}
+
+.navContainer {
+    margin: 1rem;
+    display: flex;
+    margin-bottom: 0;
+}
+
+.leftDivHeader {
+    flex: 1;
+    display: flex;
+    padding-left: 1rem;
+    align-items: center;
+}
+
+#logo {
+    height: 6rem;
+}
+
+.mediumDivHeader {
+    margin: 0 1rem;
+    padding: 1rem;
+    flex: 4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rightDivHeader {
+    padding: 1rem;
+    flex: 1;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sectionHeader {
+    background-color: rgba(100, 100, 100, .1);
+    margin: 9.5rem 7.5rem 0rem 7.5rem;
+    padding: 6rem 6rem 7.5rem 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 9rem;
+}
+
+
+/* MAIN */
+
+.mainContainer {
+    background-color: black;
+    margin-bottom: 1rem;
+    display: flex;
+}
+
+.sectionMainContainer {
+    background-color: rgb(68, 70, 94);
+    margin: 1rem;
+    padding: 1rem;
+    flex: 3;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+article {
+    background-color: rgb(22, 100, 164);
+    margin: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+    flex: 1 1 40%;
+}
+
+.mainFooter {
+    background-color: rgb(99, 153, 187);
+    margin: 1rem;
+    padding: 1rem;
+    flex: 1 1 100%;  
+}
+
+.asideContainer {
+    background-color: rgb(249, 76, 71);
+    margin: 1rem;
+    padding: 1rem;
+    flex: 1;  
+}
+
+.asideDiv {
+    background-color: rgb(255, 227, 128);
+    margin: 1rem;
+    padding: 1rem;
+}
+
+
+/* FOOTER */
+
+.footerContainer {
+    background-color: black;
+}
+
+.divFooter {
+    background-color: rgb(228, 164, 52);
+    margin: 1rem;
+    padding: 1rem;
+}
+
+
+
+@media (max-width: 915px) {
+    
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    .sectionHeader {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .navContainer {
+        margin-bottom: 0;
+    }
+
+    .mainContainer {        
+        background-color: rgb(255, 247, 52);
+        flex-direction: column;
+    }
+
+}
+
+
+
+@media (max-width: 640px) {
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    li {
+        font-size: 2rem;
+    }
+
+    span {
+        display: none;
+    }
+
+    .headerContainer {
+        background-position: 50% 40%;
+    }
+
+    .sectionHeader {        
+        margin: 3.1rem 5rem 0rem 5rem;
+        padding: 3rem 2rem 5rem 2rem;
+    }
+
+    .navContainer {
+        flex-direction: column;
+        margin-bottom: inherit;
+    }
+
+    .leftDivHeader {
+        justify-content: center;
+    }
+
+    .mediumDivHeader {
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 1rem;
+    }
+
+    .rightDivHeader {
+        gap: 2rem;
+    }
+
+    .mainContainer {
+        background-color: rgb(255, 217, 57);
+    }
+
+    .sectionMainContainer {
+        background-color: rgb(0, 71, 99);
+        flex-direction: column;
+    }
+    
+    article {
+        background-color: rgb(54, 112, 128);
+    }
+    
+    .mainFooter {
+        background-color: rgb(151, 212, 197);
+    }
+    
+    .asideContainer {
+        background-color: rgb(255, 120, 76);
+    }
+    
+    .asideDiv {
+        background-color: rgb(255, 171, 100);
+    }
+
+    .divFooter {
+        background-color: rgb(255, 191, 96);
+    }
+
+}
