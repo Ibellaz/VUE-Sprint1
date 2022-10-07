@@ -43,6 +43,34 @@ h1 {
     color: rgba(250, 140, 70, 0.7);
 }
 
+h2 {
+    background-color: rgb(240, 128, 128);
+    color: white;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    padding: 1rem 0 0 .5rem;
+}
+
+h3 {
+    color: rgb(255, 255, 161);
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: -2.5rem;
+    padding: 0 0 1rem 0.5rem;
+}
+
+h4 {
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem 0;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
 
 /* HEADER */
 
@@ -107,22 +135,26 @@ h1 {
 /* MAIN */
 
 .mainContainer {
-    background-color: black;
+    background-color: white;
     margin-bottom: 1rem;
     display: flex;
 }
 
 .sectionMainContainer {
-    background-color: rgb(68, 70, 94);
-    margin: 1rem;
-    padding: 1rem;
-    flex: 3;
+    background-color: rgb(215, 215, 215);
+    /* margin: 1rem; */
+    /* padding: 1rem; */
+    flex: 7;
     display: flex;
     flex-flow: row wrap;
 }
 
+.sectionMainContainer a {
+    font-size: 1.5rem;
+}
+
 article {
-    background-color: rgb(22, 100, 164);
+    background-color: rgb(245, 241, 241);
     margin: 1rem;
     padding: 1rem;
     margin: 1rem;
@@ -130,37 +162,61 @@ article {
     flex: 1 1 40%;
 }
 
+article img {
+    height: 20rem;
+    width: 100%;
+    object-fit: cover
+}
+
+article p {
+    color: rgb(100, 100, 100);
+    column-count: 2;
+    column-gap: 1rem;
+    padding: 1rem 0 1rem .5rem;
+}
+
 .mainFooter {
-    background-color: rgb(99, 153, 187);
+    /* background-color: rgb(99, 153, 187); */
     margin: 1rem;
     padding: 1rem;
     flex: 1 1 100%;  
 }
 
+.mainFooter p {
+    text-align: center;
+}
+
 .asideContainer {
-    background-color: rgb(249, 76, 71);
-    margin: 1rem;
+    background-color: rgb(215, 215, 215);
+    /* margin: 1rem; */
+    margin-left: 1rem;
     padding: 1rem;
-    flex: 1;  
+    flex: 2;  
 }
 
 .asideDiv {
-    background-color: rgb(255, 227, 128);
+    /* background-color: rgb(255, 227, 128); */
     margin: 1rem;
     padding: 1rem;
+    text-align: center;
 }
 
 
 /* FOOTER */
 
 .footerContainer {
-    background-color: black;
+    /* background-color: black; */
 }
 
 .divFooter {
-    background-color: rgb(228, 164, 52);
-    margin: 1rem;
+    background-color: rgb(245, 241, 241);
+    color: rgb(100, 100, 100);
+    font-size: 1.5rem;
+    /* margin: 1rem; */
     padding: 1rem;
+    text-align: center;
+    border-left: 1rem solid rgb(215, 215, 215);
+    border-right: 1rem solid rgb(215, 215, 215);
 }
 
 
@@ -169,6 +225,10 @@ article {
     
     h1 {
         font-size: 2.3rem;
+    }
+
+    h4 {
+        padding-top: 0;
     }
 
     .sectionHeader {
@@ -180,9 +240,13 @@ article {
         margin-bottom: 0;
     }
 
-    .mainContainer {        
-        background-color: rgb(255, 247, 52);
+    .mainContainer {
         flex-direction: column;
+    }
+
+    .asideContainer {
+        margin-left: 0;
+        margin-top: 1rem; 
     }
 
 }
@@ -192,7 +256,7 @@ article {
 @media (max-width: 640px) {
 
     h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     li {
@@ -232,32 +296,33 @@ article {
     }
 
     .mainContainer {
-        background-color: rgb(255, 217, 57);
+        /* background-color: rgb(255, 217, 57); */
     }
 
     .sectionMainContainer {
-        background-color: rgb(0, 71, 99);
+        /* background-color: rgb(0, 71, 99); */
         flex-direction: column;
     }
     
     article {
-        background-color: rgb(54, 112, 128);
+        /* background-color: rgb(54, 112, 128); */
     }
     
     .mainFooter {
-        background-color: rgb(151, 212, 197);
+        /* background-color: rgb(151, 212, 197); */
     }
     
     .asideContainer {
-        background-color: rgb(255, 120, 76);
+        /* background-color: rgb(255, 120, 76); */
     }
     
     .asideDiv {
-        background-color: rgb(255, 171, 100);
+        /* background-color: rgb(255, 171, 100); */
+        /* margin-top: 1rem; */
     }
 
     .divFooter {
-        background-color: rgb(255, 191, 96);
+        /* background-color: rgb(255, 191, 96); */
     }
 
 }
